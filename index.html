@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BMI Calculator</title>
+</head>
+
+<body>
+	<center>
+		<h1>BMI Calculator</h1>
+		<div id="input">
+			<img src="https://www.healthhub.sg/sites/assets/Assets/Programs/bmi/image03.gif" width="128" height="180" alt="" class="image">
+			<label class="label">Please enter Height In metres: </label>
+			<input type="number" id="height">
+			<label class="label">m</label>
+			<img src="https://www.healthhub.sg/sites/assets/Assets/Programs/bmi/image02.gif" width="128" height="180" alt="" id="inputPicHeight" class="image">
+			<label class="label">Please enter Weight In kg: </label>
+			<input type="number" id="weight">
+			<label class="label">kg </label>
+		</div>
+		<p></p>
+		<button onclick="calculateBMI()" id="calculate">Calculate</button>
+		<button onclick="resetButton()" id="reset">Reset</button>
+		<p></p>
+		<div id="output">
+			<label class=label>BMI: </label>
+			<input type="text" id="bmiNum" readonly style="margin-right: 20px;">
+			<label class=label>Remark: </label>
+			<input type="text" id="bmiRemarks" readonly>
+</div>
+			<p></p>
+			<table>
+				<tr>
+					<th class="tableHead" style="border-top-left-radius: 8px; border-left: white;">BMI</th>
+					<th class="tableHead" style="border-top-right-radius: 8px;">Remarks</th>
+				</tr>
+				<tr>
+					<td class="tableDe" style="border-left: white;">Less than or Equal to 18.5</td>
+					<td class="tableDe">You Are Underweight</td>
+				</tr>
+				<tr>
+					<td class="tableDe" style="border-left: white;">More than 18.5 but lesser or equal to 25.0</td>
+					<td class="tableDe">You Are Of Normal Range</td>
+				</tr>
+				<tr>
+					<td class="tableDe" style="border-bottom-left-radius: 8px; border-left: white;">More than 25.0</td>
+					<td class="tableDe" style="border-bottom-right-radius: 8px;">You Are Overweight</td>
+				</tr>
+			</table>
+	</center>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
